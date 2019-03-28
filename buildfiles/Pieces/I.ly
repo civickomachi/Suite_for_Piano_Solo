@@ -1,0 +1,227 @@
+\version "2.18.2"
+
+\score{
+  \new PianoStaff <<
+    \new Staff = "up" {
+      \clef treble
+      \key c \major
+      \time 4/4
+
+%      \mark "Andante"
+
+      \relative c' {
+
+        % A
+	
+        << {e2 \p g} \\ {r8. d16 e f g a g8. f16 g f e d} >> \bar "|"
+        << {e2 e} \\ {r8. b16 c d e f e8. d16 e d c b} >> \bar "|"
+        << {c2 c} \\ {r8. g16 a b c d c8. b16 c b a g} >> \bar "|"
+        << {a2 r2} \\ {r8. g16 a b c d c b a b c d e f} >> \bar "|"
+
+        << {e2 g} \\ {r8. d16 e f g a g8. f16 g f e d} >> \bar "|"
+        << {e2 e} \\ {r8. b16 c d e f e8. d16 e d c b} >> \bar "|"
+        << {c2 c} \\ {r8. g16 a b c d c8. b16 c b a g} >> \bar "|"
+        << {a2 r2} \\ {r8. g16 a b c d c b a b c d e f} >> \bar "|"
+
+        << {e2 \mp r2} \\ {r8. d16 e f g a g a g f e d c d} >> \bar "|"
+        << {e2 r2} \\ {r8. b16 c d e f e f e d c b a b} >> \bar "|"
+        << {c2 r2} \\ {r8. g16 a b c d c d c b a g f g} >> \bar "|"
+        << {a2 r2} \\ {r8. g16 a b c d c b a b c d e f} >> \bar "|"
+
+        << {e2 r2} \\ {r8. d16 e f g a g a g a g f e d} >> \bar "|"
+        << {e2 r2} \\ {r8. b16 c d e f e f e f e d c b} >> \bar "|"
+        << {c2 r2} \\ {r8. g16 a b c d c d c d c b a g} >> \bar "|"
+        << {a2 r2} \\ {r8. g16 a b c d e d e d c b c d} >> \bar "|"
+
+        << {e2 r2} \\ {r8. d16 e f g a g a g a g a g f} >> \bar "|"
+        << {e2 r2} \\ {r8. b16 c d e f e f e f e f e d} >> \bar "|"
+        << {c2 r2} \\ {r8. g16 a b c d c d c d c d c b} >> \bar "|"
+        << {a2 r2} \\ {r8. g16 a b c d e d e d e d c d} >> \bar "|"
+
+        << {e2 r2} \\ {r8. d16 e f g a g a g a g a g a} >> \bar "|"
+        << {e2 r2} \\ {r8. b16 c d e f e f e f e f e f} >> \bar "|"
+        << {c2 \cresc r2} \\ {r8. g16 a b c d c d c d c d c d} >> \bar "|"
+        << {a2 r2} \\ {r8. g16 a b c d e d e d e d e d} >> \bar "|"
+
+
+        % B
+
+        << {e2 \mf g} \\ {r8. d16 e f g a g8. f16 g f e d} >> \bar "|"
+        << {e4 c' b g} \\ {r4 r16 d16 e f e8. d16 e d c b} >> \bar "|"
+	<< {a'4 f g e} \\ {r4 r16 b16 c d c8. b16 c b a g} >> \bar "|"
+	<< {f'8 e d c g c b d} \\ {a4 r2.} >> \bar "|"
+
+        << {e'2 g} \\ {r8. d16 e f g a g8. f16 g f e d} >> \bar "|"
+        << {e4 c' b g} \\ {r4 r16 d16 e f e8. d16 e d c b} >> \bar "|"
+	<< {a'8 a b c~ c g e c} \\ {c4 f e r4} >> \bar "|"
+	<< {f8 e d c g c b d} \\ {a4 r2.} >> \bar "|"
+
+        << {e'2 g} \\ {r8. d16 e f g a g8. f16 g f e d} >> \bar "|"
+        e8 c' b g e d c e \bar "|"
+	f8 e d e f g a b~ \bar "|"
+	b8 a g f e d c b \bar "|"
+
+        << {e2 g} \\ {c,8. d16 e f g a g8. f16 g f e d} >> \bar "|"
+        << {e4 c' b g} \\ {r4 r16 d16 e f e8. d16 e d c b} >> \bar "|"
+	<< {<a' f c>2 \cresc <g e c>} \\ {s1} >> \bar "|"
+	<< {<a f c>2 <b g d>} \\ {s1} >> \bar "|"
+
+
+        % C
+
+        << {<e c>2 \f <d b>} \\ {<g, e>4~ <g e>16 f16 g a g8. f16 g f e d} >> \bar "|"
+        << {<c' a>2 <b g>} \\ {e,4~ e16 d16 e f e8. d16 e d c b} >> \bar "|"
+	<< {a'4 f g e} \\ {c4~ c16 b16 c d c8. b16 c b a g} >> \bar "|"
+	<< {f'8 e f g} \\ {r4. c,16 d} >>
+	e16 f g a b c d e \bar "|"
+
+
+        % A'
+
+        << {<c g e>2 \fp r2} \\ {r8. d,16 e f g a g a g a g a g a} >> \bar "|"
+        << {e2 r2} \\ {r8. b16 c d e f e f e f e f e f} >> \bar "|"
+        << {c2 r2} \\ {r8. g16 a b c d c d c d c d c d} >> \bar "|"
+        << {a2 r2} \\ {r8. g16 a b c d e d e d e d e d} >> \bar "|"
+
+        << {e2 r2} \\ {r8. d16 e f g a g a g a g a g f} >> \bar "|"
+        << {e2 r2} \\ {r8. b16 c d e f e f e f e f e d} >> \bar "|"
+        << {c2 r2} \\ {r8. g16 a b c d c d c d c d c b} >> \bar "|"
+        << {a2 r2} \\ {r8. g16 a b c d e d e d e d c d} >> \bar "|"
+
+        << {e2 r2} \\ {r8. d16 e f g a g a g a g f e d} >> \bar "|"
+        << {e2 r2} \\ {r8. b16 c d e f e f e f e d c b} >> \bar "|"
+        << {c2 r2} \\ {r8. g16 a b c d c d c d c b a g} >> \bar "|"
+        << {a2 r2} \\ {r8. g16 a b c d e d e d c b c d} >> \bar "|"
+
+        << {e2 r2} \\ {r8. d16 e f g a g a g f e d c d} >> \bar "|"
+        << {e2 r2} \\ {r8. b16 c d e f e f e d c b a b} >> \bar "|"
+        << {c2 r2} \\ {r8. g16 a b c d c d c b a g f g} >> \bar "|"
+        << {a2 r2} \\ {r8. g16 a b c d c b a b c d e f} >> \bar "|"
+
+        << {e2 g} \\ {r8. d16 e f g a g8. f16 g f e d} >> \bar "|"
+        << {e2 e} \\ {r8. b16 c d e f e8. d16 e d c b} >> \bar "|"
+        << {c2 \dim c} \\ {r8. g16 a b c d c8. b16 c b a g} >> \bar "|"
+        << {a2 r2} \\ {r8. g16 a b c d c b a b c d e f} >> \bar "|"
+
+        << {e2 \pp g} \\ {r8. d16 e f g a g8. f16 g f e d} >> \bar "|"
+        << {e2 e} \\ {r8. b16 c d e f e8. d16 e d c b} >> \bar "|"
+        << {c2 c} \\ {r8. g16 a b c d c8. b16 c b a g} >> \bar "|"
+        << {a2^\markup{\italic rit.-------------------------------------------------------} r2} \\ {r8. g16 a b c d c b a b c d e f} >> \bar "|"
+
+        <g e c>1 \ppp \bar "|."
+      } 
+    }
+    \new Staff = "down" {
+      \clef bass
+      \key c \major
+      \time 4/4
+
+      \relative c {
+
+        % A
+
+        c16_\markup {\italic con \italic pedale} g' c4. g,16 d' g4. \bar "|"
+	a,16 e' a4. e,16 b' e4. \bar "|"
+        f,16 c' f4. c,16 g' c4. \bar "|"
+	f,16 c' f4. g,16 d' g4. \bar "|"
+
+        c,16 g' c4. g,16 d' g4. \bar "|"
+	a,16 e' a4. e,16 b' e4. \bar "|"
+        f,16 c' f4. c,16 g' c4. \bar "|"
+	f,16 c' f4. g,16 d' g4. \bar "|"
+
+        c,16 g' c4. g,16 d' g4. \bar "|"
+	a,16 e' a4. e,16 b' e4. \bar "|"
+        f,16 c' f4. c,16 g' c4. \bar "|"
+        f,16 c' f4. g,16 d' g4. \bar "|"
+	
+        c,16 g' c4. g,16 d' g4. \bar "|"
+	a,16 e' a4. e,16 b' e4. \bar "|"
+        f,16 c' f4. c,16 g' c4. \bar "|"
+	f,16 c' f4. g,16 d' g4. \bar "|"
+
+        c,16 g' c4. g,16 d' g4. \bar "|"
+	a,16 e' a4. e,16 b' e4. \bar "|"
+        f,16 c' f4. c,16 g' c4. \bar "|"
+	f,16 c' f4. g,16 d' g4. \bar "|"
+
+        c,16 g' c4. g,16 d' g4. \bar "|"
+        a,16 e' a4. e,16 b' e4. \bar "|"
+        f,16 c' f4. c,16 g' c4. \bar "|"
+	f,16 c' f4. g,16 d' g4. \bar "|"
+
+        % B
+
+        c,16 g' c4. g,16 d' g4. \bar "|"
+	a,16 e' a b c4 e,,16 b' e4. \bar "|"
+        f,16 c' f g a4 c,,16 g' c4. \bar "|"
+	f,16 c' f g a4 g,16 d' g d g, d' g d \bar "|"
+
+        c16 g' c4. g,16 d' g4. \bar "|"
+	a,16 e' a b c4 e,,16 b' e4. \bar "|"
+        f,16 c' f a c4 c,,16 g' c e g4 \bar "|"
+	f,16 c' f g a4 g,16 d' g d g, d' g d \bar "|"
+
+        c16 g' c4. g,16 d' g4. \bar "|"
+	a,16 e' a c e4 e,,16 b' e g b4 \bar "|"
+        f,16 c' f a c4 c,,16 g' c e g4 \bar "|"
+	f,16 c' f a c4 g,16 d' g d g, d' g d \bar "|"
+
+        c16 g' c4. g,16 d' g4. \bar "|"
+	a,16 e' a b c4 e,,16 b' e4. \bar "|"
+        f,16 c' f a c4 c,,16 g' c e g4 \bar "|"
+	f,16 c' f a c4 g,16 d' g b d4 \bar "|"
+
+        % C
+
+        c,16 g' c d e4 g,,16 d' g4. \bar "|"
+	a,16 e' a b c4 e,,16 b' e4. \bar "|"
+        f,16 c' f g a4 c,,16 g' c4. \bar "|"
+	f,16 c' f g a b r8 g,16 d' g b d8 g, \bar "|"
+
+        % A'
+
+        c,16 g' c4. g,16 d' g4. \bar "|"
+	a,16 e' a4. e,16 b' e4. \bar "|"
+        f,16 c' f4. c,16 g' c4. \bar "|"
+	f,16 c' f4. g,16 d' g4. \bar "|"
+
+        c,16 g' c4. g,16 d' g4. \bar "|"
+	a,16 e' a4. e,16 b' e4. \bar "|"
+        f,16 c' f4. c,16 g' c4. \bar "|"
+	f,16 c' f4. g,16 d' g4. \bar "|"
+
+        c,16 g' c4. g,16 d' g4. \bar "|"
+	a,16 e' a4. e,16 b' e4. \bar "|"
+        f,16 c' f4. c,16 g' c4. \bar "|"
+	f,16 c' f4. g,16 d' g4. \bar "|"
+	
+        c,16 g' c4. g,16 d' g4. \bar "|"
+	a,16 e' a4. e,16 b' e4. \bar "|"
+        f,16 c' f4. c,16 g' c4. \bar "|"
+	f,16 c' f4. g,16 d' g4. \bar "|"
+
+        c,16 g' c4. g,16 d' g4. \bar "|"
+	a,16 e' a4. e,16 b' e4. \bar "|"
+        f,16 c' f4. c,16 g' c4. \bar "|"
+	f,16 c' f4. g,16 d' g4. \bar "|"
+
+        c,16 g' c4. g,16 d' g4. \bar "|"
+	a,16 e' a4. e,16 b' e4. \bar "|"
+        f,16 c' f4. c,16 g' c4. \bar "|"
+	f,16 c' f4. g,16 d' g4. \bar "|"
+
+        <g c,>1 \bar "|."
+
+      }
+    }
+  >>
+
+  \header {
+    piece = "I. Andante"
+  }
+
+\layout { }
+\midi { }
+
+}
